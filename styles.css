@@ -1,0 +1,110 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+    overflow-x: hidden;
+    background-image: url('images.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(images.jpeg);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+.course-builder {
+    padding: 20px;
+    background-image: url('background1.jpeg');
+    background-size: cover;
+    background-position: top;
+    background-color: white;
+    max-width: 800px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.modules-container {
+    margin-top: 20px;
+}
+
+.module {
+    background-image: url('background1.jpeg');
+    background-size: cover;
+    
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+.module:hover {
+    background-image: url('background1.jpeg');
+}
+
+.module-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.module-title {
+    font-size: 18px;
+}
+
+.module-actions {
+    display: flex;
+    gap: 5px;
+}
+
+.resources-list {
+    margin-top: 10px;
+    padding-left: 0;
+    list-style: none;
+}
+
+.resource {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 5px;
+    cursor: move;
+}
+
+.hidden {
+    display: none;
+}
